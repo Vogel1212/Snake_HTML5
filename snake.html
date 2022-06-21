@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8"></meta>
+	<head>
+		<title>Jogo Snake em HTML5</title>
+		<style>
+			canvas
+			{
+   	 		padding-left: 0;
+   	 		padding-right: 0;
+   	 		margin-left: auto;
+    			margin-right: auto;
+    			display: block;
+			}
+		</style>
+	</head>
+	<body bgcolor="black" onkeydown="keyboardDown(event)" onkeyup="keyboardUp(event)" onload="setInterval('gameMain()', 130)">
+		<script type="text/javascript" src="snake.js"></script>
+		<div align="center">
+			<p><font color="white">Pontuação: <strong id="currSize"></strong> - Pontuação Anterior: <strong id="lastSize"></font></strong></p>
+			<canvas id="canvas" style="border:10px solid #00c22a;"></canvas>
+		</div>
+	</body>
+</html>
